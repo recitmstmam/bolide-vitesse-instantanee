@@ -1,7 +1,7 @@
 control.onEvent(EventBusSource.MICROBIT_ID_IO_P0, EventBusValue.MICROBIT_PIN_EVT_PULSE_HI, function () {
     Fente += 1
     t1 = input.runningTimeMicros() / 1000000
-    d1 = Fente / 4 * 9.57 / 100
+    d1 = Fente / 6 * 9.6 / 100
     Vitesse = Math.abs(d2 - d1) / Math.abs(t2 - t1)
     radio.sendString("" + (Vitesse))
     t2 = t1
