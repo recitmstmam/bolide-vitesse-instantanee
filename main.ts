@@ -3,8 +3,7 @@ control.onEvent(EventBusSource.MICROBIT_ID_IO_P0, EventBusValue.MICROBIT_PIN_EVT
     t1 = input.runningTimeMicros() / 1000000
     d1 = Fente / 4 * 9.57 / 100
     Vitesse = Math.abs(d3 - d1) / Math.abs(t3 - t1)
-    serial.writeString("" + d1 + "," + t1 + "," + d2 + "," + t2 + "," + d3 + "," + t3 + "," + Vitesse)
-    serial.writeLine("")
+    radio.sendString("" + d1 + "," + t1 + "," + d2 + "," + t2 + "," + d3 + "," + t3 + "," + Vitesse)
     t2 = t1
     d2 = d1
     t3 = t2
