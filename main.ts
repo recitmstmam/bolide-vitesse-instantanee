@@ -2,7 +2,7 @@ control.onEvent(EventBusSource.MICROBIT_ID_IO_P0, EventBusValue.MICROBIT_PIN_EVT
     Fente += 1
     Distance.push(Fente / 4 * 9.57)
     Temps.push(input.runningTimeMicros() / 1000000)
-    serial.writeString("" + Temps[list.length] + "," + Distance[list.length] + "," + (Distance[Distance.length] - Distance[Distance.length - 1]) / (Temps[Temps.length] - Temps[Temps.length - 1]))
+    serial.writeString("" + Temps[list.length] + "," + Distance[list.length] + "," + (Distance[list.length] - Distance[list.length - 1]) / (Temps[list.length] - Temps[list.length - 1]))
 })
 let Temps: number[] = []
 let Distance: number[] = []
