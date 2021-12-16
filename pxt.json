@@ -1,19 +1,18 @@
 {
-    "name": "Bolide vitesse instantanée",
-    "description": "",
+    "name": "bolide-vitesse-instantanee",
     "dependencies": {
         "core": "*",
         "radio": "*",
         "microphone": "*"
     },
     "files": [
+        ".vscode/settings.json",
+        ".vscode/tasks.json",
+        "README.md",
         "main.blocks",
         "main.ts",
-        "README.md",
-        null
-    ],
-    "testFiles": [
-        "test.ts"
+        "test.ts",
+        "tsconfig.json"
     ],
     "targetVersions": {
         "target": "4.0.16",
