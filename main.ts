@@ -10,7 +10,7 @@ control.onEvent(EventBusSource.MICROBIT_ID_IO_P0, EventBusValue.MICROBIT_PIN_EVT
 input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Diamond)
     basic.pause(500)
-    basic.showString("!")
+    basic.showIcon(IconNames.SmallDiamond)
     control.reset()
 })
 let t2 = 0
@@ -20,7 +20,7 @@ let d1 = 0
 let t1 = 0
 let Fente = 0
 basic.showIcon(IconNames.Yes)
-radio.setGroup(1)
+radio.setGroup(10)
 pins.setEvents(DigitalPin.P0, PinEventType.Pulse)
 Fente = 0
 t1 = 0
