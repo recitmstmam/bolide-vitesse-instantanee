@@ -20,7 +20,7 @@ let d1 = 0
 let t1 = 0
 let Fente = 0
 basic.showIcon(IconNames.Yes)
-radio.setGroup(10)
+radio.setGroup(1)
 pins.setEvents(DigitalPin.P0, PinEventType.Pulse)
 Fente = 0
 t1 = 0
